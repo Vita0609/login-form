@@ -12,7 +12,7 @@ const LoginForm = () => {
 
     dispatch(
       logIn({
-        email: form.elements.email.value,
+        email: form.elements.name.value,
         password: form.elements.password.value,
       })
     )
@@ -24,18 +24,18 @@ const LoginForm = () => {
         console.log("login error");
       });
 
-    form.reset();
+    // form.reset();
   };
     return (
         <div className='wrapper'>
             <form onSubmit={handleSubmit } action="">
                 <h1>Login</h1>
                 <div className="input-box">
-                    <input type="text" placeholder='Username' required />
+                    <input type="text" placeholder='Username' required name = 'name'/>
                     <FaUser className='icon' />
                 </div>
                 <div className="input-box">
-                    <input type="password" placeholder='Password' required />
+                    <input type="password" placeholder='Password' required name = 'password'/>
                     <FaLock className='icon' />
                 </div>
 
