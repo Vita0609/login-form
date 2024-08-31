@@ -31,7 +31,7 @@ const LoginForm = () => {
             <form onSubmit={handleSubmit } action="">
                 <h1>Login</h1>
                 <div className="input-box">
-                    <input type="text" placeholder='Username' required name = 'name'/>
+                    <input type="text" placeholder='Email' required name = 'name'/>
                     <FaUser className='icon' />
                 </div>
                 <div className="input-box">
